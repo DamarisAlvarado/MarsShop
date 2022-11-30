@@ -1,0 +1,64 @@
+﻿@model IEnumerable<MVCProyecto.Models.ropa>
+<link href="~/Estilos/CRCYGuardar.css" rel="stylesheet" />
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+@{
+    ViewBag.Title = "Ropa";
+}
+
+<h2 class="Titulo2">@ViewBag.Title</h2>
+
+<div class="form-group">
+    <div class="col-md-offset-2 col-md-10">
+        <font color="green">@ViewBag.mensaje</font>
+    </div>
+</div>
+
+<p class="Crear">
+    @Html.ActionLink("Crear Nuevo", "Guardar")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Marca)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Precio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Talla)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Foto)
+        </th>
+
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Marca)
+            </td>
+            <td>
+                <strong >$ </strong>
+                @Html.DisplayFor(modelItem => item.Precio)
+                <strong>MXN</strong>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Talla)
+            </td>
+            <td>
+                <img src="@Html.DisplayFor(modelItem => item.Foto)" width="150" />
+            </td>
+
+            <td class="Crud">
+                @Html.ActionLink("Editar", "Modificar", new { id = item.Id }) |
+                @Html.ActionLink("Ver Detalle", "Detalle", new { id = item.Id }) |
+                @Html.ActionLink("Eliminar", "Eliminar", new { id = item.Id })
+            </td>
+        </tr>
+    }
+
+</table>

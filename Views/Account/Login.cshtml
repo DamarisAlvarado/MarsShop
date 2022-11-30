@@ -1,0 +1,61 @@
+﻿@using MVCProyecto.Models
+@model LoginViewModel
+
+<link href="~/Estilos/login.css" rel="stylesheet" />
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+@{
+    ViewBag.Title = "Iniciar sesión";
+}
+
+
+<div class="row">
+    <div class="col-md-8">
+       
+        <section id="loginForm" class="caja">
+            <h2 class="Titulo2">@ViewBag.Title</h2>
+            @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+            {
+                @Html.AntiForgeryToken()
+
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="form-group">
+                    @Html.TextBoxFor(m => m.Email, new { placeholder = "Correo Electrónico", @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    @Html.PasswordFor(m => m.Password, new { placeholder = "Contraseña", @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <div class="checkbox">
+                            @Html.CheckBoxFor(m => m.RememberMe)
+                            @Html.LabelFor(m => m.RememberMe)
+
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input class="inicio" type="submit" value="Iniciar sesión" />
+                    </div>
+                </div>
+                <div class="forget">
+                    @Html.ActionLink("Registrarse como usuario nuevo", "Register", new { @class = "Registrar" })
+                    <br />
+                    <br />
+                    @Html.ActionLink("¿Ha olvidado su contraseña?", "ForgotPassword")
+                </div>
+
+            }
+        </section>
+    </div>
+
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

@@ -1,0 +1,139 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bree+Serif&family=Covered+By+Your+Grace&family=Handlee&family=Poppins&family=Zilla+Slab:wght@300&display=swap');
+body {
+    background-image: url(https://img.freepik.com/vector-gratis/copia-espacio-fondo-blanco-ondulado-capas_23-2148845469.jpg?w=1060&t=st=1669450180~exp=1669450780~hmac=b4eff80810d1ef2dbb0b4f2c472d8dbbc93eacf3051b66c07bf0380e23487af2);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+.completo {
+    display: flex;
+    flex-direction: row;
+    margin-top:5rem;
+    text-align:center;
+    
+}
+
+.columna1 {
+    width: 50% !important;
+    align-self: center;
+}
+p {
+    text-align: justify;
+    font-size:15px;
+}
+.columna2 {
+        width: 50%;
+        align-self:center;
+}
+.imagen2{
+    margin-left:4rem;
+    margin-top:2rem;
+}
+
+.imagen1, .imagen2 {
+    width: 100%;
+    border-radius: 3rem;
+}
+    .imagen1:hover {
+        filter: blur(2px);
+        cursor:pointer;
+    }
+    .imagen2:hover {
+        filter: blur(2px);
+        cursor: pointer;
+    }
+    
+strong{
+    color:#ff5700;
+    font-size:16px;
+}
+.Titulo {
+    text-align: center;
+}
+.Titulo, .Titulo2 {
+    font-family: 'Bree Serif', serif;
+    font-size: 35px;
+    color:black;
+    animation: bounceInDown;
+    animation-duration: 2s;
+}
+
+
+.contenedor {
+    text-align:center;
+    color:black;
+}
+.Formulario {
+    margin-top: 5rem;
+    font-size: 15px;
+}
+label{
+    display:block;
+    margin-top:1rem;
+}
+input {
+    margin-top: 0.5rem;
+    width: 30rem; 
+}
+textarea {
+    resize: none;
+    width: 30rem;
+    height: 10rem;
+}
+
+.INP{
+   
+}
+.botones {
+    width: 12rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    border: solid #ff5700 0.54px;
+    background-color: #ff5700;
+}
+ .botones:hover {
+     background-color: #FFC300;
+     border: none;
+    }
+#inf{
+    color:black;
+}
+.correos{
+    margin-top:10rem;
+
+}
+a{
+    color:#ff5700;
+}
+
+    a:hover {
+        color: #FFC300;
+    }
+
+/*Ropa*/
+.Crear {
+    font-size: 17px;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+table {
+    margin-top: 3rem;
+    text-align: center;
+    color: black;
+   
+}
+th{
+    text-align:center;
+    font-size:15px;
+}
+
+.Crud{
+   font-size:15.5px;
+   color:#f6d000;
+}
+
+
+
+
+

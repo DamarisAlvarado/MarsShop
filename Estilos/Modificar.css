@@ -1,0 +1,79 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Covered+By+Your+Grace&family=Handlee&family=Poppins&display=swap');
+
+body {
+    background-image: url(https://img.freepik.com/vector-gratis/papel-pintado-blanco-elegante-detalles-dorados_23-2149095009.jpg?w=1060&t=st=1669607683~exp=1669608283~hmac=1dba0cf13535ccc0fb7475ce894bf15a19648afca879c832c90df3b447572ed0);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+
+.Completo1 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.columna01 {
+    width: 50% !important;
+    align-self: center;
+    margin-top: -5rem;
+    animation:fadeInLeftBig;
+    animation-duration: 3s;
+}
+
+.columna02 {
+    width: 50% !important;
+    align-self: center;
+    margin-top: -10rem;
+    margin-left:-5rem;
+}
+
+.ImagenM {
+    animation:jackInTheBox;
+    animation-duration:4s;
+}
+
+h4 {
+    margin-top: 2rem;
+}
+
+.Titulo2 {
+    font-family: 'Bree Serif', serif;
+    font-size: 35px;
+    margin-top: 4rem;
+    animation: bounceInDown;
+    animation-duration: 2s;
+}
+
+a {
+    color: #ff5700;
+    font-size: 16px;
+}
+
+    a:hover {
+        color: #FFC300;
+    }
+
+.Modificar {
+    font-size: 16px;
+    border-radius: 0.60rem;
+    border: solid #ff5700 0.54px;
+    background-color: #ff5700;
+    width: 10rem;
+    color: black;
+}
+
+    .Modificar:hover {
+        background-color: #FFC300;
+        border: none;
+        color: black;
+        border-radius: 0.60rem;
+        border: solid #FFC300 0.54px;
+    }
+
+.regresar {
+    margin-top: -3.5rem;
+}

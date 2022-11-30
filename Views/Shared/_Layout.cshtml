@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://img.freepik.com/vector-gratis/plantilla-logotipo-tienda-ropa-diseno-plano_23-2149486132.jpg?w=740&t=st=1668659363~exp=1668659963~hmac=49c4d347ce958b76cd9149348490eb0ac8a16ed01dca1dc266b7da482788ffb1">
+    <title> Mars Shop </title>
+    <link href="~/Estilos/Nosotros.css" rel="stylesheet" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top" style=" border: none; " >
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" title="more options">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+               
+                @Html.ActionLink("Mars Shop", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+          
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav" >
+                    <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Ropa", "Index", "Ropa")</li>
+                    <li>@Html.ActionLink("Calzado", "Index", "Calzado")</li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year <strong style="color:#ff3e00">MarsShop.mx</strong> Todos los derechos reservados. </p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

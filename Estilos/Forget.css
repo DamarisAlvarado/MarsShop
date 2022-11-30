@@ -1,0 +1,55 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Covered+By+Your+Grace&family=Handlee&family=Poppins&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-abstracto-blanco_23-2148818118.jpg?w=1060&t=st=1669447131~exp=1669447731~hmac=40ae4ad5c728611aa8f1c1bcf29611864212f14e3a2903946555c89c9019f918);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.Titulo2 {
+    font-family: 'Bree Serif', serif;
+    font-size: 35px;
+    margin-top: 3px;
+    margin-bottom: 6rem;
+    animation: bounceInDown;
+    animation-duration: 2s;
+}
+
+.caja {
+    
+    text-align:center;
+    width: 460px;
+    height: 400px;
+    border-radius: 5px;
+    padding: 2%;
+    margin-top: 5%;
+    margin-left: 30%;
+    color: black;
+}
+
+.form-control {
+    margin-left: 20%;
+}
+
+.Refistrar {
+    border-radius: 0.60rem;
+    border: solid #ff5700 0.54px;
+    background-color: #ff5700;
+    width: 12rem;
+    height:3rem;
+    color: black;
+    text-align: center;
+    margin-right:1rem;
+    margin-top:2rem;
+}
+
+    .Refistrar:hover {
+        background-color: #FFC300;
+        border: none;
+        color: black;
+        border-radius: 0.60rem;
+        border: solid #FFC300 0.54px;
+    }

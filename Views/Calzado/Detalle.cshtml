@@ -1,0 +1,75 @@
+﻿@model MVCProyecto.Models.calzado
+<link href="~/Estilos/Detalle.css" rel="stylesheet" />
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+@{
+    ViewBag.Title = "Detalle";
+}
+
+<h2 class="Titulo2">Detalle</h2>
+
+<div>
+    <h4>Calzado</h4>
+
+    <div class="contenedor">
+
+        <div class="columna1">
+
+            <img class="ImagenArticulo" src="@Html.DisplayFor(model => model.Foto)" width="250" />
+
+        </div>
+
+        <div class="columna2">
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Marca)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Marca)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Precio)
+                </dt>
+
+                <dd>
+                    <strong>$</strong>
+                    @Html.DisplayFor(model => model.Precio)
+                    <strong>MXN</strong>
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Talla)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Talla)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Colores)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Colores)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Descripcion)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Descripcion)
+                </dd>
+
+            </dl>
+        </div>
+    </div>
+
+</div>
+<p class="regresar">
+
+    @Html.ActionLink("Regresar", "Index")
+</p>

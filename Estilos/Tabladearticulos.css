@@ -1,0 +1,81 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Covered+By+Your+Grace&family=Handlee&family=Poppins&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+strong {
+    color: #ff5700;
+    font-size: 16px;
+}
+
+.Titulo2 {
+    font-family: 'Bree Serif', serif;
+    margin-top: 4rem;
+    font-size: 35px;
+    color: black;
+    animation: bounceInDown;
+    animation-duration: 2s;
+}
+a {
+    color: #ff5700;
+    font-size:16px;
+}
+
+    a:hover {
+        color: #FFC300;
+    }
+
+.completo {
+    display: flex;
+    flex-direction: row;
+}
+
+.columna1 {
+    width: 50% !important;
+    font-size: 15px;
+    color: black;
+    margin-left: 3rem;
+    animation: zoomIn;
+    animation-duration: 2.5s;
+    margin-top:-2rem;
+}
+.columna1, .columna2 {
+    width: 50% !important;
+}
+
+.columna2 {
+    width: 50% !important;
+    text-align: center;
+}
+h4{
+    margin-top:2rem;
+}
+.ImagenF {
+    margin-top: -10rem;
+    margin-left: 2.5rem;
+    animation: slideInRight;
+    animation-duration: 2s;
+}
+
+
+.guardar {
+    
+    font-size: 16px;
+    border-radius: 0.60rem;
+    border: solid #ff5700 0.54px;
+    background-color: #ff5700;
+    width: 10rem;
+    color: black;
+}
+    .guardar:hover {
+        background-color: #FFC300;
+        border: none;
+        color: black;
+        border-radius: 0.60rem;
+        border: solid #FFC300 0.54px;
+    }
+
+.regresar{
+    margin-top:-3.5rem;
+}
+

@@ -1,0 +1,105 @@
+﻿@model MVCProyecto.Models.calzado
+<link  rel="stylesheet" href="~/Estilos/Tabladearticulos.css"/>
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+@{
+    ViewBag.Title = "Guardar";
+}
+<style>
+    body {
+        background-image: url(https://img.freepik.com/vector-gratis/papel-pintado-blanco-elegante-detalles-dorados_23-2149095007.jpg?w=1060&t=st=1669611865~exp=1669612465~hmac=1a8e6dec60d1b6c018dcb0de27eac8e407f259bea79deb73fc5e64699380bf1b);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+
+<h2 class="Titulo2">@ViewBag.Title</h2>
+
+
+@using (Html.BeginForm("Nuevo", "Calzado", new { ReturnUrl = ViewBag.ReturnUrl },
+FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    @Html.AntiForgeryToken()
+    <h4>Calzado</h4>
+
+    <div class="completo">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="columna1">
+            <div class="form-group">
+                @Html.LabelFor(model => model.Marca, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Marca, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Marca, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Precio, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Precio, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Precio, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Talla, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Talla, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Talla, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Colores, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Colores, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Colores, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Foto, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Foto, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Foto, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Descripcion, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Descripcion, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Descripcion, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <font color="green">@ViewBag.mensaje</font>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input class="guardar" type="submit" value="Guardar" />
+                </div>
+            </div>
+        </div>
+
+        <div class="columna2">
+            <img class="ImagenF" src="https://img.freepik.com/foto-gratis/concepto-venta-compras-moda-estilo-personas-hombre-joven-elegante-eligiendo-calzado-centro-comercial_1157-48894.jpg?w=360&t=st=1669406774~exp=1669407374~hmac=ba0d34ca3d80e33dc5a2cdf13b0f8b812f5ce0af510f21f2e5dd470134a352de" />
+        </div>
+      
+    </div>
+
+  
+
+
+}
+
+<div class="regresar">
+    @Html.ActionLink("Regresar", "Index")
+</div>
+
+

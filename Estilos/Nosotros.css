@@ -1,0 +1,57 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bree+Serif&family=Covered+By+Your+Grace&family=Handlee&family=Poppins&family=Zilla+Slab:wght@300&display=swap');
+/*ACERCA DE */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    font-family:'Bree Serif', serif;
+    font-size:40px;
+}
+
+.completo {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.columna1 {
+    width: 50% !important;
+    align-self: center;
+}
+
+p {
+    text-align: justify;
+    font-size: 15px;
+}
+
+.columna2 {
+    width: 50%;
+    align-self: center;
+}
+
+.imagen2 {
+    margin-left: 4rem;
+    margin-top: 2rem;
+}
+
+.imagen1, .imagen2 {
+    width: 100%;
+    border-radius: 3rem;
+}
+
+    .imagen1:hover {
+        filter: blur(2px);
+        cursor: pointer;
+    }
+
+    .imagen2:hover {
+        filter: blur(2px);
+        cursor: pointer;
+    }
+
+strong {
+    color: #ff5700;
+    font-size: 16px;
+}

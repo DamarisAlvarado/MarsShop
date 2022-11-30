@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "Contacto";
+}
+<link href="~/Estilos/CRCYGuardar.css" rel="stylesheet" />
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<style>
+    body {
+        background-image: url(https://img.freepik.com/vector-gratis/papel-pintado-blanco-elegante-detalles-dorados_23-2149095008.jpg?w=1060&t=st=1669449423~exp=1669450023~hmac=80048a1420f24b1fd672b1bb7c3fac4c10e38d96eb9232115936626f7924b37b);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+</style>
+
+<div class="contenedor">
+    <h2 class="Titulo" style="font-family: 'Bree Serif', serif; font-size:40px;">Contacto</h2>
+    <form class="Formulario " action="mailto:MarsShop@support.com" method="post" enctype="text/plain">
+        <label>Nombre</label>
+        <input class="INP" type="text" required /> <br />
+        <label>Correo Electrónico</label>
+        <input class="INP" type="email" required /><br />
+        <label>Mensaje</label>
+        <textarea required placeholder="Déjanos tus comentarios y sugerencias"></textarea><br />
+        <input class="botones" type="submit" value="Enviar" />
+        <input class="botones" type="reset" name="borrar">
+    </form>
+</div>
+
+<div class="correos">
+    <address>
+        <strong id="inf">Soporte:</strong>   <a href="mailto:MarsShop@support.com">MarsShop@support.com</a><br />
+        <strong id="inf">Marketing:</strong> <a href="mailto:MarsShop@marketing.com">MarsShop@marketing.com</a>
+    </address>
+</div>
